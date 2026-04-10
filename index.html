@@ -11,6 +11,11 @@
 
   <style>
 
+  .text{
+    text-align: left;
+    color: antiquewhite;
+
+  }
   body{
     background: rgb(115, 98, 98);
     height: 600px;
@@ -19,28 +24,60 @@
     align-items: center;
   }
 
+  #box{
+    background: rgb(140, 125, 125);
+    padding: 30px;
+    border-radius: 25px;
+    width: 400px;
+  }
+
+  .form-control{
+    border-radius: 10px;
+    text-align: center;
+  }
   .btn {
     padding: 10px 20px;
     font-size: 16px;
+    width: 150px;
+  }
+
+  .btn:hover{
+    padding: 10.5px 20.5px;
+    font-size: 16.5px;
   }
 
   .smallbutton {
     padding: 4px 8px;
     font-size: 14px;
-    background: rgb(192, 163, 163);
+    background: rgb(158, 135, 135);
+    color: rgb(0, 0, 0);
+    border: none;
+  }
 
+  .smallbutton:hover{
+    background:  rgb(158, 135, 135);
+    padding: 4.5px 8.5px;
+    font-size: 15px;
   }
 
   .instructions {
     display: none;
+    color: antiquewhite;
   }
+
+  h6{
+    color: antiquewhite
+    ;
+  }
+
+
   </style>
 </head>
 <body>
   
 <div class="text-center" id="box">
 
-    <h1>Login</h1>
+    <h1>Log In</h1>
 
     <button class="btn smallbutton mb-2" onclick="show()">
       Show Instructions
@@ -58,7 +95,7 @@
     <input type="password" id="pass" class="form-control mb-3" placeholder="********">
 
     <div class="text mb-3">
-      <input type="checkbox"> Stay logged in
+      <input type="checkbox" class="stay"> Stay logged in
       <p>Your session will stay active on this advice.</p>
     </div>
 
